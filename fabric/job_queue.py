@@ -6,7 +6,7 @@ items, though within Fabric itself only ``Process`` objects are used/supported.
 """
 
 from pprint import pprint
-from Crypto import Random 
+from Crypto import Random
 import time
 
 from fabric.state import env, io_sleep
@@ -15,7 +15,7 @@ from fabric.state import env, io_sleep
 class JobQueue(object):
     """
     The goal of this class is to make a queue of processes to run, and go
-    through them running X number at any given time. 
+    through them running X number at any given time.
 
     So if the bubble is 5 start with 5 running and move the bubble of running
     procs along the queue looking something like this:
@@ -28,7 +28,7 @@ class JobQueue(object):
         __________________[~~~~~]..
         ____________________[~~~~~]
         ___________________________
-                                End 
+                                End
     """
     def __init__(self, max_running):
         """
@@ -58,7 +58,7 @@ class JobQueue(object):
         Just going to use number of jobs as the JobQueue length.
         """
         return self._num_of_jobs
-    
+
     def close(self):
         """
         A sanity check, so that the need to care about new jobs being added in
@@ -148,12 +148,12 @@ class JobQueue(object):
             time.sleep(io_sleep)
 
 
-#### Sample 
+#### Sample
 
 def try_using(parallel_type):
     """
     This will run the queue through it's paces, and show a simple way of using
-    the job queue. 
+    the job queue.
     """
 
     def print_number(number):

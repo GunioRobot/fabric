@@ -83,9 +83,9 @@ differently from the rest:
 
   Enabling ``debug`` output will also display full Python tracebacks during
   aborts.
-  
+
   .. note::
-  
+
       Where modifying other pieces of output (such as in the above example
       where it modifies the 'running' line to show the shell and any escape
       characters), this setting takes precedence over the others; so if
@@ -122,7 +122,7 @@ please see the API docs linked in each bullet point:
   dictionary subclass (similar to :doc:`env <env>`) whose keys are the output
   level names, and whose values are either True (show that particular type of
   output) or False (hide it.)
-  
+
   `fabric.state.output` is the lowest-level implementation of output levels and
   is what Fabric's internals reference when deciding whether or not to print
   their output.

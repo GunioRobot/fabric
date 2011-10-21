@@ -514,7 +514,7 @@ happens if we run :option:`fab --list <-l>` on this fabfile::
     $ fab --list
     Available commands:
 
-      webservice_read   List some directories.   
+      webservice_read   List some directories.
       urlopen           urlopen(url [, data]) -> open file-like object
 
 Our fabfile of only one task is showing two "tasks", which is bad enough, and

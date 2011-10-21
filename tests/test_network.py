@@ -328,10 +328,10 @@ class TestNetwork(FabricTest):
         if display_output:
             expected = """
 [%(prefix)s] sudo: oneliner
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 [%(prefix)s] out: sudo password:
 [%(prefix)s] out: Sorry, try again.
-[%(prefix)s] out: sudo password: 
+[%(prefix)s] out: sudo password:
 [%(prefix)s] out: result
 """ % {'prefix': env.host_string}
         else:
@@ -339,7 +339,7 @@ class TestNetwork(FabricTest):
             # course the actual result output.
             expected = """
 [%(prefix)s] sudo: oneliner
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 [%(prefix)s] out: Sorry, try again.
 [%(prefix)s] out: sudo password: """ % {'prefix': env.host_string}
         eq_(expected[1:], sys.stdall.getvalue())
@@ -364,10 +364,10 @@ class TestNetwork(FabricTest):
             sudo('twoliner')
         expected = """
 [%(prefix)s] sudo: oneliner
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 [%(prefix)s] out: sudo password:
 [%(prefix)s] out: Sorry, try again.
-[%(prefix)s] out: sudo password: 
+[%(prefix)s] out: sudo password:
 [%(prefix)s] out: result
 [%(prefix)s] sudo: twoliner
 [%(prefix)s] out: sudo password:
@@ -400,7 +400,7 @@ class TestNetwork(FabricTest):
                 run('silent')
         expected = """
 [%(prefix)s] run: normal
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 [%(prefix)s] out: foo
 [%(prefix)s] run: silent
 [%(prefix)s] run: normal
@@ -428,7 +428,7 @@ class TestNetwork(FabricTest):
             run('twoliner')
         expected = """
 [%(prefix)s] run: oneliner
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 [%(prefix)s] out: result
 [%(prefix)s] run: twoliner
 [%(prefix)s] out: result1
@@ -457,7 +457,7 @@ class TestNetwork(FabricTest):
                 run('twoliner')
         expected = """
 [%(prefix)s] run: oneliner
-[%(prefix)s] Login password: 
+[%(prefix)s] Login password:
 result
 [%(prefix)s] run: twoliner
 result1

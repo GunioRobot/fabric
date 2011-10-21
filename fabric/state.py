@@ -149,7 +149,7 @@ env_options = [
         help="comma-separated list of hosts to exclude"
     ),
 
-    make_option('-i', 
+    make_option('-i',
         action='append',
         dest='key_filename',
         default=None,
@@ -213,7 +213,7 @@ env_options = [
     # Parallel execution model flag
     make_option('-P', '--parallel',
 <<<<<<< HEAD
-            dest = 'run_in_parallel', 
+            dest = 'run_in_parallel',
             action = 'store_true',
             default = False,
             help = ("use the multiprocessing module to fork by hosts, If num "

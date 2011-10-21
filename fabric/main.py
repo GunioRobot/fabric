@@ -853,7 +853,7 @@ Remember that -f can be used to specify fabfile path, and use -h for help.""")
                                 args = args,
                                 kwargs = kwargs,
                                 )
-                    else: 
+                    else:
                         p = multiprocessing.Process(
                                 target = task,
                                 args = args,

@@ -678,7 +678,7 @@ Documentation updates
 * :issue:`120`: Tweaked documentation, help strings to make it more obvious
   that fabfiles are simply Python modules.
 * :issue:`127`: Added :ref:`note to install docs <pypm>` re: ActiveState's
-  PyPM. Thanks to Sridhar Ratnakumar for the tip. 
+  PyPM. Thanks to Sridhar Ratnakumar for the tip.
 
 
 Changes in version 0.9 (2009-11-08)
@@ -956,7 +956,7 @@ the door.
 
 * Various minor tweaks to the (still in-progress) documentation, including one
   thanks to Curt Micol.
-  
+
 * Added a number of TODO items based on user feedback (thanks!)
 
 * Host information now available in granular form (user, host, port) in the

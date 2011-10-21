@@ -16,7 +16,7 @@ Connections
 
 We've documented how Fabric really connects to its hosts before, but it's
 currently somewhat buried in the middle of the overall :doc:`execution docs
-</usage/execution>`. Specifically, you'll want to skip over to the 
+</usage/execution>`. Specifically, you'll want to skip over to the
 :ref:`connections` section and read it real quick. (You should really give that
 entire document a once-over, but it's not absolutely required.)
 
